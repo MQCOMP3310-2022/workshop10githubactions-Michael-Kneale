@@ -27,6 +27,18 @@ public class App {
         if(day == 31 && month == 4) {
             return false;
         }
+
+        if(day == 31 && month == 6) {
+            return false;
+        }
+
+        if(day == 31 && month == 9) {
+            return false;
+        }
+
+        if(day == 31 && month == 11) {
+            return false;
+        }
         //Some thoughts: 
         //  what about days of the month?
         //  what about leap years?
