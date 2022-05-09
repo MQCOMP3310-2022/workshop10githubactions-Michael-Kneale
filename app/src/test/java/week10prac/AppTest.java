@@ -185,8 +185,8 @@ public class AppTest {
 
     @Test public void testWeirdEdgeCase() {
         App classUnderTest = new App();
-        for(int i = 3; i<=14;i++){
-            assertFalse("September 1752 is a weird month", classUnderTest.isValidGregorianDate(i,9,2022));
+        for(int i = 3; i<=13;i++){
+            assertFalse("September 1752 is a weird month", classUnderTest.isValidGregorianDate(i,9,1752));
         }
     }  
 }
