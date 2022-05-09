@@ -44,6 +44,10 @@ public class App {
             return false;
         }
 
+        if(day == 29 && month == 2 && year % 4 == 0) {
+            return false;
+        }
+
         if(day >= 3 || day <= 13 && month == 9 && year == 1752) {
             return false;
         }
