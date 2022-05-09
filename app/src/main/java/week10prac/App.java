@@ -50,7 +50,7 @@ public class App {
 
         if(day >= 3 || day <= 13 && month == 9 && year == 1752) {
             return false;
-        }
+        } 
         //Some thoughts: 
         //  what about days of the month?
         //  what about leap years?
