@@ -25,6 +25,37 @@ public class App {
 
         //add your own checks here
         
+        if(day > 30 && month == 4) {
+            return false;
+        }
+
+        if(day >= 31 && month == 6) {
+            return false;
+        }
+
+        if(day > 30 && month == 9) {
+            return false;
+        }
+
+        if(day > 30 && month == 11) {
+            return false;
+        }
+
+        if(day > 29 && month == 2) {
+            return false;
+        }
+
+
+        if(day > 28 && month == 2 && !((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))) {
+            return false;
+        }
+
+        if((day >= 3 || day <= 13) && (month == 9) && (year == 1752)) {
+            return false;
+        }
+
+
+
         //Some thoughts: 
         //  what about days of the month?
         //  what about leap years?
